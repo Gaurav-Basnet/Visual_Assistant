@@ -6,12 +6,9 @@
 
 #include "generated_plugin_registrant.h"
 
-#include <flutter_tts/flutter_tts_plugin.h>
-#include <tflite_flutter_plus/tflite_flutter_plus_plugin_c_api.h>
+#include <speech_to_text_windows/speech_to_text_windows.h>
 
 void RegisterPlugins(flutter::PluginRegistry* registry) {
-  FlutterTtsPluginRegisterWithRegistrar(
-      registry->GetRegistrarForPlugin("FlutterTtsPlugin"));
-  TfliteFlutterPlusPluginCApiRegisterWithRegistrar(
-      registry->GetRegistrarForPlugin("TfliteFlutterPlusPluginCApi"));
+  SpeechToTextWindowsRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("SpeechToTextWindows"));
 }

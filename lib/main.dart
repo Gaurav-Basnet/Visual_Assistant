@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
-import 'vision_camera.dart'; // import the module you created
+import 'package:visual_assistant/widgetstree.dart';
 
 List<CameraDescription> cameras = [];
 
@@ -11,11 +11,13 @@ Future<void> main() async {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: VisionCamera(cameras: cameras), // pass cameras to your widget
+      home: Widgetstree(), // your first screen
     );
   }
 }

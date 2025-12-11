@@ -1,7 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:visual_assistant/data/speak.dart';
 
-class Obdetection extends StatelessWidget {
+class Obdetection extends StatefulWidget {
   const Obdetection({super.key});
+
+  @override
+  State<Obdetection> createState() => _ObdetectionState();
+}
+
+class _ObdetectionState extends State<Obdetection> {
+  @override
+  void initState() {
+    Speak.init();
+    Speak.say("Object Detection Opened");
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -27,4 +40,6 @@ class Obdetection extends StatelessWidget {
       ),
     );
   }
+
+  void initautoSpeeK() {}
 }

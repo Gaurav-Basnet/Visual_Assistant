@@ -106,7 +106,7 @@ class _WidgetstreeState extends State<Widgetstree> {
         },
         partialResults: false,
         listenMode: ListenMode.confirmation,
-        pauseFor: const Duration(seconds: 3),
+        pauseFor: const Duration(minutes: 0),
         listenFor: const Duration(minutes: 30),
       );
 
